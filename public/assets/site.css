@@ -207,3 +207,52 @@ nav.desk{font-size:13.5px;gap:0}
 nav.desk>a,nav.desk>.dd>button{padding:10px 8px}
 .top .btn{padding:0 14px}
 .topbar{gap:10px}
+/* ---- V3.1 : pourpre, premier écran mobile, photos ---- */
+:root{--pourpre:#7A1F2B;--pourpre-f:#5E1620;--pourpre-c:#F4E4E1;--or-c:#E9CFA3}
+.btn.p{background:var(--pourpre);color:#FFFDF9;border-color:var(--pourpre)}
+.btn.p:hover{background:var(--pourpre-f);border-color:var(--pourpre-f)}
+.btn:not(.p):not(.w):not(.g):hover{border-color:var(--pourpre);color:var(--pourpre)}
+.hero h1.big::after,h2.acc::before{content:"";display:block;width:56px;height:3px;background:var(--pourpre);border-radius:2px}
+.hero h1.big::after{margin-top:18px}
+h2.acc::before{margin-bottom:16px}
+.doors .door{border-top:3px solid var(--pourpre)}
+.door b{color:var(--charbon)}
+.price strong{color:var(--pourpre)}
+.price div{border-top:3px solid var(--pourpre)}
+.logo b{color:var(--pourpre)}
+nav.desk a[aria-current="page"]{color:var(--pourpre)}
+#drawer .list summary::after{color:var(--pourpre)}
+.plum{background:var(--pourpre);color:#FFFDF9}
+.plum h1,.plum h2,.plum h3{color:#FFFDF9}
+.plum .muted{color:var(--pourpre-c)}
+.plum .small{color:#EBD3CF}
+.plum .lbl{color:var(--or-c)}
+.plum .crumb,.plum .crumb a{color:var(--or-c)}
+.plum .card{background:var(--pourpre-f);border-color:#9C4A55}
+.plum .card h3{color:var(--or-c)}
+.plum .btn.w{background:#FFFDF9;color:var(--pourpre-f);border-color:#FFFDF9}
+.plum .btn.g{border-color:#FFFDF9;color:#FFFDF9;background:none}
+.plum.hero h1.big::after{background:var(--or-c)}
+.sgx{background:var(--pourpre);border-color:var(--pourpre)}
+.sgx p{color:var(--pourpre-c)}
+.sgx .btn{color:var(--pourpre-f)}
+.sgx .lnk{color:var(--or-c)!important}
+.sgx .tag{border-color:var(--or-c)!important;color:#FFFDF9!important}
+.photo.full{aspect-ratio:4/5;max-height:none;object-position:50% 30%}
+@media(max-width:820px){
+  .hero .photo.full{aspect-ratio:4/5;max-height:none}
+  .hero .photo.desk{aspect-ratio:5/4;max-height:none;object-position:50% 18%}
+}
+@media(min-width:821px){.photo.desk{aspect-ratio:4/5}}
+@media(max-width:700px){
+  :root{--head:60px}
+  .logo b{font-size:21px}
+  .logo span{font-size:10.5px}
+  .hero.home{padding:22px 0 30px}
+  .hero.home h1.big{font-size:33px;line-height:1.08}
+  .hero.home h1.big::after{margin-top:12px}
+  .hero.home .lead{font-size:16.5px!important;line-height:1.5!important}
+  .hero.home .stack{gap:16px!important}
+  .hero.home .btn{min-height:48px}
+  .hide-m{display:none}
+}
